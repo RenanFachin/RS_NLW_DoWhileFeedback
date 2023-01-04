@@ -1,8 +1,12 @@
 import "dotenv/config"
-import express, { request } from 'express';
+import express from 'express';
+
+import { router } from "./routes";
 
 const app = express();
+app.use(express.json()) // Habilitando receber json
 
+app.use(router)
 
 app.get("/github", (request, response) => {
     response.redirect(
