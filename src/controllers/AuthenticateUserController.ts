@@ -10,9 +10,12 @@ class AuthenticateUserController {
         // Instanciando a camada de serviço
         const service = new AuthenticateUserService()
 
-        const result = await service.execute(code)
-
-        return response.json(result)
+        try{
+            const result = await service.execute(code)
+            return response.json(result)
+        } catch(e) {
+            return response.status(401).json(e.message)
+        }
     }
 }
 
