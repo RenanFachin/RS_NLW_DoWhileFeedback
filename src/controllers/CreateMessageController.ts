@@ -14,7 +14,6 @@ class CreateMessageController {
         // Aguardando a execução da função execute e mandando os parâmetros necessários
         const result = await service.execute(message, user_id)
 
-
         return response.json(result)
     }
 }

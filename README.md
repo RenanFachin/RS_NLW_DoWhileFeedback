@@ -16,6 +16,7 @@ Os usuários da aplicação, logadas ou não, poderão visualizar em tempo real 
   - [Prisma](https://www.prisma.io/)
   - [Axios](https://axios-http.com/)
   - [Jsonwebtoken](https://jwt.io/)
+  - [socket.io](https://socket.io/)
 
 <!-- ### Instalação
 ```bash
