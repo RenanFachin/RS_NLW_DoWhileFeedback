@@ -18,10 +18,17 @@ Os usuários da aplicação, logadas ou não, poderão visualizar em tempo real 
   - [Jsonwebtoken](https://jwt.io/)
   - [socket.io](https://socket.io/)
 
-<!-- ### Instalação
+### Instalação
 ```bash
+  # Instale as dependências
+  npm i
 
-``` -->
+  # Rode as migrations do prisma para criar as tabelas
+  npx prisma migrate dev
+
+  # Rode o projeto
+  npm run dev
+```
 
 ## ✔️ Autores
 
